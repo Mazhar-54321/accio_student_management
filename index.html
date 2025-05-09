@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="title">Student Portal</div>
+	<div class="container">
+     <div class="search-container">
+        <input class="search-input" onchange="search()" id="search" placeholder="Search"/>
+        <button class="search-button w-10" onclick="clickHandler()">Search</button>
+     </div>
+     <div class="filters-container">
+        <button class="search-button" onclick="filter('a-z')">Sort A->Z</button>
+        <button class="search-button" onclick="filter('z-a')">Sort Z->A</button>
+        <button class="search-button" onclick="filter('marks')">Sort By Marks</button>
+        <button class="search-button" onclick="filter('pass')">Sort By Passing</button>
+        <button class="search-button" onclick="filter('class')">Sort By Class</button>
+        <button class="search-button" onclick="filter('gender')">Sort By Gender</button>
+     </div> 
+     <table id="jsonTable">
+        <thead>
+          <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Gender</td>
+            <td>Class</td>
+            <td>Marks</td>
+            <td>Passing</td>
+            <td>Email</td>
+          </tr>
+          
+        </thead>
+        <tbody>
+          
+          
+        </tbody>
+      </table>
+  </div>
+    
+  <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
